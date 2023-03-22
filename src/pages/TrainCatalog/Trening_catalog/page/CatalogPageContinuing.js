@@ -10,7 +10,7 @@ function CatalogPageContinuing(props) {
     return (
         <div>
             <Navbar/>
-            <Catalog1 lvl=" Продолжающий" />
+            <Catalog1 lvl=" Продолжающий" api={`http://164.92.190.147:8028/api/v1/geeksfit/trainings/`} />
             <Footer/>
         </div>
     );

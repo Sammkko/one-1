@@ -12,7 +12,7 @@
 
 .container {
     display: flex;
-    width: 1138px;
+    width: 75%;
     margin: 0 auto;
     justify-content: space-between;
     column-gap: 170px;
@@ -163,7 +163,10 @@ p {
     cursor: pointer;
     margin-top: 73px;
 }
-
+.wrapper:nth-child(n + 3) .hiden .block img{
+    width: 40%;
+    margin: 0 auto;
+}
 
 .levels {
     height: 40px;
@@ -182,5 +185,17 @@ p {
     display: none;
     width: 326.65px;
     height: 367.42px;
+}
+
+@media only screen and (max-width: 1300px){
+    .container {
+            display: flex;
+            width: 75%;
+            margin: 0 auto;
+            justify-content: space-between;
+            column-gap: 170px;
+            flex-wrap: wrap;
+        }
+    
 }
 
