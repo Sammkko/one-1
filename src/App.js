@@ -1,18 +1,20 @@
+import React, { useState } from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
-import {RegistrationForm} from "./components/reg/Register2";
-import {BrowserRouter, Routes,Route} from "react-router-dom";
 import Context from "./components/content/Context";
-import React, {useState} from "react";
+import Modal from "./components/reg/Register";
+import { RegistrationForm } from "./components/reg/Register2";
+import DocumentPageMain from "./pages/Documentation/DocumentPageMain";
 import MainPage from "./pages/MainPage/MainPage";
 import Payment from "./pages/Payment/PayMent/payment";
 import PortfolioPage from "./pages/Profile/pages/portfolioPage/PortfolioPage";
-import Modal from "./components/reg/Register";
-import TreinBlock from "./pages/TreinBlock/treinBlock";
-import YouTubeProject from "./pages/TreinBlock/components/cardiolevel/youTubePage/YouTubeProject";
-import CatalogPageElementary from "./pages/TrainCatalog/Trening_catalog/page/CatalogPageElementary";
-import CatalogPageContinuing from "./pages/TrainCatalog/Trening_catalog/page/CatalogPageContinuing";
 import CatalogPageAdvanced from "./pages/TrainCatalog/Trening_catalog/page/CatalogPageAdvanced";
-import DocumentPageMain from "./pages/Documentation/DocumentPageMain";
+import CatalogPageContinuing from "./pages/TrainCatalog/Trening_catalog/page/CatalogPageContinuing";
+import CatalogPageElementary from "./pages/TrainCatalog/Trening_catalog/page/CatalogPageElementary";
+import YouTubeProject from "./pages/TreinBlock/components/cardiolevel/youTubePage/YouTubeProject";
+import TreinBlock from "./pages/TreinBlock/treinBlock";
+import store from "./store/store";
 
 function App() {
     const [renderEl,setRender] = useState(false);
@@ -43,6 +45,7 @@ function App() {
 
     return(
         <Context.Provider value={objRend}>
+            <Provider store={store}>
             <BrowserRouter>
                 <Routes>
                     <Route path={'/'} element={<MainPage/>}/>
@@ -56,6 +59,7 @@ function App() {
                     <Route path={'/document'} element={<DocumentPageMain/>}/>
                 </Routes>
             </BrowserRouter>
+            </Provider>
         </Context.Provider>
 );
 }

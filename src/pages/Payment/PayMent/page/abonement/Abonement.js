@@ -1,9 +1,9 @@
-import React from 'react'
-import Card from '../../components/abonementsComponent/Card'
-import CardModal from '../../components/abonementsComponent/CardModal'
-import CardModalTwo from "../../components/abonementsComponent/CardModalTwo";
-import stl from '../../css/Abonement.module.css'
+import React from 'react';
 import Navbar from "../../../../../components/navbar/Navbar";
+import Card from '../../components/abonementsComponent/Card';
+import CardModal from '../../components/abonementsComponent/CardModal';
+import CardModalTwo from "../../components/abonementsComponent/CardModalTwo";
+import stl from '../../css/Abonement.module.css';
 
 const cardsInner = [
     {
@@ -42,7 +42,7 @@ function Abonement() {
                         Постоянство - путь к Совершенству!
                     </h1>
                     <div className={stl.cards}>
-                        {cardsInner.map(item => <Card n1={item.h1} n2={item.h2} n3={item.h3} n4={item.h4} n5={item.h5}/>)}
+                        {cardsInner.map((item,i) => <Card key={i} n1={item.h1} n2={item.h2} n3={item.h3} n4={item.h4} n5={item.h5}/>)}
                     </div>
                 </div>
             </div>

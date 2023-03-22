@@ -6,6 +6,7 @@ const authSlice = createSlice({
         modal1:false,
         modal2:false,
         modalPrice:'',
+        payement:false
     },
     reducers:{
         setModal:(state,action)=>{
@@ -21,8 +22,11 @@ const authSlice = createSlice({
         closeModal2:(state,action)=>{
             state.modal2 = false
         },
+        afterPayed:(state,action)=>{
+            state.payement = true
+        }
     }
 })
 export default authSlice.reducer
 
-export const {setModal,closeModal,setModal2,closeModal2}= authSlice.actions
+export const {setModal,closeModal,setModal2,closeModal2,afterPayed}= authSlice.actions

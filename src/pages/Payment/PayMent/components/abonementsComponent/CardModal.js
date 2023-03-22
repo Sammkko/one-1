@@ -1,58 +1,74 @@
 import { Box, Modal } from '@mui/material'
 import React, { useState } from 'react'
-import { ReactComponent as Krestik } from '../../imgs/krestik.svg'
-import { ReactComponent as Bank } from '../../imgs/bank.svg'
-import  BankKyrgyz  from '../../imgs/kyrgyztan.svg'
-import  master  from '../../imgs/master.svg'
-import  elsom  from '../../imgs/elsom.svg'
-import  visa  from '../../imgs/visa.svg'
-import  OMoi  from '../../imgs/oMoi.svg'
-import styl from '../../css/Abonement.module.css';
-import Button from '../UI/Button'
 import { useDispatch, useSelector } from 'react-redux'
-import { closeModal, setModal2 } from '../../store/slices/authSlice'
+import Swal from 'sweetalert2'
+import { closeModal, setModal2 } from '../../../../../store/slices/authSlice'
+import styl from '../../css/Abonement.module.css'
+import { ReactComponent as Bank } from '../../imgs/bank.svg'
+import elsom from '../../imgs/elsom.svg'
+import { ReactComponent as Krestik } from '../../imgs/krestik.svg'
+import BankKyrgyz from '../../imgs/kyrgyztan.svg'
+import master from '../../imgs/master.svg'
+import OMoi from '../../imgs/oMoi.svg'
+import visa from '../../imgs/visa.svg'
+import Button from '../UI/Button'
+const banks = [
+    {
+        id: 1,
+        img: <Bank />
+    },
+    {
+        id: 2,
+        img: <img src={BankKyrgyz}/>
+    },
+    {
+        id: 3,
+        img: <img src={master}/>
+    },
+    {
+        id: 4,
+        img: <img src={elsom}/>
+    },
+    {
+        id: 5,
+        img: <img src={OMoi}/>
+    },
+    {
+        id: 6,
+        img: <img src={visa}/>
+    }
+]
 function CardModal() {
-    const banks = [
-        {
-            id: 1,
-            img: <Bank />
-        },
-        {
-            id: 2,
-            img: <img src={BankKyrgyz}/>
-        },
-        {
-            id: 3,
-            img: <img src={master}/>
-        },
-        {
-            id: 4,
-            img: <img src={elsom}/>
-        },
-        {
-            id: 5,
-            img: <img src={OMoi}/>
-        },
-        {
-            id: 6,
-            img: <img src={visa}/>
-        }
-    ]
 
     const dispatch = useDispatch()
     const { modal1, modalPrice } = useSelector(state => state.modal)
 
     const handleClose = () => {
         dispatch(closeModal())
-        dispatch(setModal2(false))
         setInp(null)
     }
     const [inp, setInp] = useState()
 
+    const handleChange =()=>{
+        if(inp){
+            dispatch(closeModal())
+            dispatch(setModal2())
+            setInp(null)
+        }else{
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Вы не выбрали способ оплаты',
+              })
+        }
+    }
     return (
         <Modal
             open={modal1}
             onClose={handleClose}
+            sx={{
+                zIndex: 10,
+            }}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
         >
@@ -177,11 +193,7 @@ function CardModal() {
                         }}
                     >
                         <Button
-                            onClick={() => {
-                                console.log('hi')
-                                dispatch(closeModal())
-                                dispatch(setModal2())
-                            }}
+                            onClick={handleChange}
                         >
                             Оплатить
                         </Button>

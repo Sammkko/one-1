@@ -1,8 +1,8 @@
-import React from 'react'
-import { useDispatch } from 'react-redux'
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setModal } from '../../../../../store/slices/authSlice';
 import stl from '../../css/Abonement.module.css';
 import Vector from '../../imgs/vertor.svg';
-import { setModal } from '../../store/slices/authSlice';
 function Card({ n1, n2, n3, n4, n5 }) {
     const dispatch = useDispatch()
     const handleDispatch = () => {
