@@ -10,7 +10,7 @@ function CatalogPageAdvanced(props) {
     return (
         <div>
             <Navbar/>
-            <Catalog1 lvl=" Продвинутый"/>
+            <Catalog1 lvl=" Продвинутый" api={`http://164.92.190.147:8028/api/v1/geeksfit/trainings/`} / >
             <Footer/>
         </div>
     );

@@ -10,7 +10,7 @@ function CatalogPageElementary(props) {
     return (
         <div>
             <Navbar/>
-            <Catalog1 lvl=" Начинающий"/>
+            <Catalog1 lvl=" Начинающий" api={`http://164.92.190.147:8028/api/v1/geeksfit/trainings/`}/>
             <Footer/>
         </div>
     );

@@ -31,7 +31,7 @@ export default function Catalog1(props) {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch(`http://164.92.190.147:8028/api/v1/geeksfit/trainings/`);
+      const response = await fetch(props.api);
       const data = await response.json();
       setCardArray(data);
     }
