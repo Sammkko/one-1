@@ -1,0 +1,239 @@
+.aboutBody {
+  background-color: #000000;
+  padding-top: 60px;
+}
+
+.h1AboutUs {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom:40px;
+}
+
+.slick-track{
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+.pAboutUs {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.aboutBlock {
+  margin: 10px auto 80px;
+  width: 100% !important;
+  height: 520px;
+}
+.aboutContainer {
+  width: 275px !important;
+  height: 340px;
+  margin: 10px 5px 80px;
+  padding: 50px 0;
+}
+
+.aboutItem {
+  flex-grow: 1;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  border-radius: 10px;
+}
+
+.aboutItem:hover {
+  flex-grow: 3.3;
+  transform: scaleX(1.1) scaleY(1.2);
+}
+
+.aboutItem:before {
+  content: attr(data-order);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.mainWhyUs {
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+
+.h1WhyUs {
+  padding-top: 55px;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+
+.containerWhyUs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 140px;
+}
+
+.boxWhyUs {
+  width: 250px;
+  height: 200px;
+  margin: 0 80px;
+}
+
+.blockWhyUs {
+  margin-left: 35%;
+}
+
+.imgBgWhyUs {
+  background-color: black;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.imgWhyUs1 {
+  margin-top: 24px;
+  margin-left: 14px;
+}
+.imgWhyUs2 {
+  margin-top: 12px;
+  margin-left: 13px;
+}
+.imgWhyUs3 {
+  margin-top: 13px;
+  margin-left: 20px;
+}
+.imgWhyUs4 {
+  margin-top: 13px;
+  margin-left: 15px;
+}
+.imgWhyUs5 {
+  margin-top: 20px;
+  margin-left: 14px;
+}
+.aboutP{
+  color: black;
+  margin-top: 15px;
+}
+
+.boxWhyUs p {
+  text-align: center;
+}
+
+
+@media (max-width: 1400px) {
+  .aboutContainer{
+    width: 250px !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .aboutContainer{
+    width: 230px !important;
+  }
+  .aboutItem{
+    height: 330px;
+  }
+}
+@media (max-width: 1024px) {
+  .h1AboutUs {
+    font-size: 40px;
+  }
+  .pAboutUs {
+    font-size: 20px;
+  }
+  .h1WhyUs {
+    font-size: 40px;
+  }
+}
+
+
+@media (max-width: 950px) {
+
+  .aboutContainer{
+    width: 220px !important;
+  }
+  .aboutItem{
+    height: 320px;
+  }
+}
+
+@media (max-width: 950px) {
+  .aboutContainer{
+    width: 210px !important;
+  }
+  .aboutItem{
+    height: 320px;
+  }
+}
+@media (max-width: 850px) {
+  .aboutContainer{
+    width: 200px !important;
+  }
+  .aboutItem{
+    height: 315px;
+  }
+  .boxWhyUs{
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .aboutContainer{
+    width: 95% !important;
+  }
+  .aboutItem{
+    height: 365px;
+  }
+  .h1AboutUs {
+    font-size: 28px;
+  }
+  .pAboutUs {
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .h1WhyUs {
+    font-size: 28px;
+  }
+
+  .boxWhyUs{
+    margin: 0 40px;
+  }
+  .containerWhyUs {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutItem{
+    height: 325px;
+  }
+}
+
+@media (max-width: 425px) {
+  .pAboutUs {
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .aboutBlock {
+    margin: 10px auto 20px;
+  }
+  .aboutItem{
+    height: 290px;
+  }
+}
+
+@media (max-width: 375px) {
+  .aboutItem{
+    height: 240px;
+  }
+  .aboutBlock {
+    margin: 10px auto 0;
+  }
+}

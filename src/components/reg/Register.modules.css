@@ -1,0 +1,263 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+#mainRegister{
+    display: flex;
+    width: 450px;
+    height: 610px;
+    background: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    margin: 200px auto 0px auto;
+    z-index: 999;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #479F77;
+    font-size: 42px;
+    font-weight: 440;
+}
+
+.RegisterX{
+    margin-top: 9px;
+    margin-left: 86%;
+}
+
+.mainLogoRegister{
+     padding-top: 44px;
+     width: 400px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+.mainLogoRegister2{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.logoRegister1{
+    width: 35px;
+    height: 35px;
+}
+
+.logoRegister3{
+    width: 35px;
+    height: 35px;
+}
+
+.mainLogoHRegister{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mainLogoHRegister2{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logoHRegister1{
+    font-weight: 10;
+    font-size: 16px;
+    font-weight: 420;
+    transform: translateX(9px);
+}
+.logoHRegister3{
+    font-weight: 10;
+    font-size: 16px;
+    font-weight: 420;
+}
+
+.contInpRegister{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 24px;
+}
+.errorDivInReg{
+    margin-left: 50px;
+    font-size: 13px;
+}
+
+.inputRegister{
+    padding: 16px;
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    margin: 10px auto 10px auto;
+}
+
+.regBox a{
+    display: block;
+    text-decoration: none;
+    color: #747575;
+    padding-top: 30px;
+}
+.regBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.regBox2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+
+}
+.submit {
+    margin-top: 55px;
+    width: 205px;
+    height: 55px;
+    padding: 12px;
+    font-size: 1.2em;
+    background: #479F77;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+.submit2{
+    width: 205px;
+    height:45px;
+    padding: 12px;
+    font-size: 1.2em;
+    background: #479F77;
+    border-radius: 20px;
+    color: white;
+
+}
+.RegFooter{
+    display: flex;
+    margin-top: 45px;
+    color: #747575;
+}
+
+.RegFooter a{
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+    color: #4242de;
+}
+
+.RegFooter2{
+    display: flex;
+    color: #747575;
+    margin-top: 25px;
+}
+
+.RegFooter2 a{
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+    color: #4242de;
+}
+
+
+@media (max-width: 650px) {
+    #mainRegister {
+        width: 400px;
+        height: 540px;
+    }
+    .main {
+        font-size: 32px;
+    }
+    .inputRegister {
+        height: 35px;
+    }
+    .submit {
+        font-size: 18px;
+    }
+    .regBox a {
+        font-size: 14px;
+    }
+    .mainLogoRegister {
+        padding-top: 30px;
+    }
+    .RegFooter {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    #mainRegister {
+        width: 380px;
+        height: 530px;
+    }
+    .main {
+        font-size: 28px;
+    }
+    .inputRegister {
+        height: 30px;
+    }
+    .submit {
+        font-size: 14px;
+    }
+    .regBox a {
+        font-size: 14px;
+    }
+    .mainLogoRegister {
+        padding-top: 30px;
+    }
+    .RegFooter {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    #mainRegister {
+        width: 350px;
+        height: 520px;
+        margin-left: 12px;
+    }
+    .main {
+        font-size: 24px;
+    }
+    .inputRegister {
+        height: 25px;
+    }
+    .submit {
+        font-size: 12px;
+    }
+    .regBox a {
+        font-size: 12px;
+    }
+        .RegFooter {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 370px) {
+    #mainRegister {
+        width: 310px;
+        margin-left: 0;
+    }
+    .main {
+        font-size: 22px;
+    }
+    .inputRegister {
+        height: 20px;
+    }
+}

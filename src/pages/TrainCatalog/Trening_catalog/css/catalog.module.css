@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap');
+
+
+
+.wrapper {
+    position: relative;
+
+}
+.card_container{
+    margin-top: 128px;
+}
+
+.container {
+    display: flex;
+    width: 1138px;
+    margin: 0 auto;
+    justify-content: space-between;
+    column-gap: 170px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    padding-top: 23px;
+    padding-bottom: 23px ;
+    width: 232.71px;
+    height: 273.51px;
+    margin-top: 26px;
+    margin-bottom: 9px;
+    border-radius: 32.2762px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.catalogH4{
+    display: inline-block;
+    margin: 13px auto 0;
+    font-family: 'Inter';
+    font-style: normal;
+    
+    font-weight: 700;
+    font-size: 30.6103px;
+    line-height: 37px;
+    border-bottom: 2px solid #ffffff;
+    color: #FFFFFF;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.4069px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 42px;
+    margin-bottom: 34px;
+}
+
+
+
+.trening_star {
+    height: 38px;
+    width: 40px;
+    background: url(../img/Vector.svg) no-repeat;
+    background-size: cover;
+    margin: 0 0 13px 180px;
+}
+
+.trening_star.active {
+    background: url(../img/diazayn_govno.svg);
+    background-size: cover;
+    height: 38px;
+    width: 40px;
+    transition: .4s ease-in-out;
+    transform: rotate(-360deg);
+}
+
+.start {
+    width: 158px;
+    height: 42px;
+    background: #479F77;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    border-radius: 22px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+}
+
+.start:hover {
+    background-color: #FFFFFF;
+    color: #479F77;
+    font-size: 28px;
+    transition: 1s;
+}
+
+.horizanalLine {
+    height: 5px;
+    border: none;
+    background-color: #479F77;
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+    transform: scaleX(1.2);
+}
+
+.horizanalLine::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -255%;
+    left: -2%;
+    width: 30px;
+    height: 30px;
+    background: url('../img/vectorgreen.svg') no-repeat center;
+}
+
+
+.wrapper:nth-child(n + 3) .hiden {
+    position: absolute;
+    left: 0;
+    background: rgba(40, 40, 40, 0.55);
+    backdrop-filter: blur(12.5px);
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.wrapper:nth-child(n + 3) .hiden .block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20% 0 20%;
+}
+.wrapper:nth-child(n + 3) .hiden .block button{
+    width: 326.65px;
+    min-height: 72.82px;
+    background: #000000;
+    border-radius: 36.8243px;
+    color: #FFFFFF;
+    text-shadow: 0px 2.94595px 3.68243px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    font-size: 29.4595px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 73px;
+}
+
+
+.levels {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.wrapper:nth-child(n + 3) .block {
+    display: block;
+}
+
+.block {
+    display: none;
+    width: 326.65px;
+    height: 367.42px;
+}
+

@@ -1,0 +1,467 @@
+.headerContainer {
+  background-color: white;
+  background-image: url("Photo/Rectangle 174.svg");
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+.headerItem {
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.containerWrapp {
+  width: 100%;
+}
+.head {
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.headerBtn {
+  display: flex;
+  align-items: center;
+}
+.headerFlex {
+  margin: 100px 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerFlex a:last-child {
+  margin-left: 270px;
+}
+
+.headerButton {
+  width: 287px;
+  height: 54px;
+  cursor: pointer;
+  border: none;
+  background: #479f77;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 30px;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.headerButton:hover {
+  color: green;
+  border: 0;
+}
+
+.Neon:hover {
+  background-color: white;
+  box-shadow: 0 0 30px 0 white;
+}
+
+.headerButton2 {
+  margin-left: 40px;
+  width: 160px;
+  height: 54px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ffffff;
+  /*text-transform: uppercase;*/
+  line-height: 24px;
+  font-size: 20px;
+  /*letter-spacing: 2px;*/
+  border-radius: 30px;
+  border: 7px solid #479f77;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.headerButton2:hover {
+  color: green;
+  border: 0;
+}
+
+.neon:hover {
+  background-color: white;
+  box-shadow: 0 0 30px 0 white;
+}
+
+.headerIconPortfolio {
+  width: 55px;
+  height: 55px;
+  margin: 0 20px;
+}
+
+.headerIconPortfolio img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-text {
+  margin-top: 70px;
+  padding: 40px;
+  font-size: 45px;
+}
+
+.headerInput {
+  display: flex;
+  /*flex-direction: row;*/
+  /*align-items: flex-start;*/
+  margin: 20px auto 0 auto;
+  width: 432px;
+  height: 50px;
+  padding: 10px 22px 10px 20px;
+  background-color: #f6f5f5;
+  border-radius: 30px;
+  border: 2px solid #000000;
+  /*font-weight: 500;*/
+  font-size: 22px;
+  color: rgba(116, 117, 117, 0.71);
+}
+
+.modal-button {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 288px;
+  height: 64px;
+  background-color: forestgreen;
+  border-radius: 30px;
+  text-align: center;
+  margin-left: 135px;
+}
+
+.modal-button {
+  /*font-size: 18px;*/
+  cursor: pointer;
+  border: none;
+  background: #479f77;
+  color: white;
+  border-radius: 30px;
+  transition: 0.5s;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.modal-button:hover {
+  color: green;
+  border: 0;
+}
+
+.modals:hover {
+  background-color: white;
+  box-shadow: 0 0 30px 0 rgba(0, 128, 0, 0.65);
+}
+
+.modal__content h4 {
+  text-align: center;
+  color: #479f77;
+}
+
+.modal__content p {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #747575;
+}
+
+.vector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 160px;
+  padding: 0;
+  width: 84px;
+  height: 81px;
+  background-image: url("Photo/Frame 258.svg");
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
+
+.vector2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 280px;
+  width: 84px;
+  height: 81px;
+  background-image: url("Photo/Frame 259.svg");
+  background-repeat: no-repeat;
+}
+
+.Buttons {
+  /*margin-top: 100px;*/
+  width: 269px;
+  height: 74px;
+  cursor: pointer;
+  border: none;
+  background: #479f77;
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 30px;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.Buttons:hover {
+  color: white;
+  border: 0;
+}
+
+.Neons:hover {
+  background-color: black;
+  box-shadow: 0 0 30px 0 white;
+}
+
+.buttons {
+  width: 284px;
+  height: 74px;
+  cursor: pointer;
+  border: 7px solid #479f77;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 30px;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.buttons:hover {
+  color: white;
+  border: 0;
+}
+
+.neons:hover {
+  background-color: black;
+  box-shadow: 0 0 30px 0 white;
+}
+
+.headPortfolio li {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.Buttons .buttons {
+  text-align: center;
+}
+
+.text {
+  position: absolute;
+  top: 5px;
+  left: 30%;
+  margin-top: 410px;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  /*display: none;*/
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.headPortfolio:hover .text {
+  opacity: 1;
+  top: 0;
+}
+
+.capital {
+  margin: 150px 0 40px;
+  font-size: 50px;
+  text-align: center;
+  color: #ffff;
+}
+
+.span {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 25px;
+  color: white;
+}
+
+.modal {
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -1000px;
+  left: calc(40% - 120px);
+  border-radius: 40px;
+}
+
+.modal.in_show {
+  top: calc(25% - 140px);
+}
+
+.modal__content {
+  width: 100%;
+  height: 200px;
+}
+
+
+
+@media (max-width: 1200px) {
+  .headerFlex a:last-child{
+    margin-left: 200px;
+  }
+  .text {
+    margin-top: 360px;
+    left: 20%;
+  }
+}
+@media (max-width: 1024px) {
+  .capital {
+    font-size: 40px;
+  }
+  .headerFlex a:last-child{
+    margin-left: 150px;
+  }
+  .text {
+    margin-top: 300px;
+  }
+  .headPortfolio li {
+    padding-top: 20px;
+  }
+  .span {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .headerButton{
+    width: 230px;
+  }
+}
+@media (max-width: 800px) {
+  .head {
+    padding: 0 40px;
+  }
+  .headerFlex a:last-child{
+    margin-left: 100px;
+  }
+  .text {
+    left: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .Buttons{
+    width: 220px;
+    font-size: 18px;
+  }
+  .buttons{
+    width: 220px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .headerButton {
+    width: 180px;
+  }
+  .headerButton2 {
+    width: 150px;
+  }
+  .capital {
+    font-size: 30px;
+  }
+  .text{
+    font-size: 20px;
+  }
+  .headerFlex{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .headerFlex a:last-child{
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .head {
+    padding: 0 20px;
+  }
+  .headerButton {
+    width: 150px;
+  }
+  .headerButton2 {
+    margin-left: 20px;
+    width: 120px;
+  }
+  .capital {
+    font-size: 28px;
+  }
+  .headerFlex{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0 0;
+  }
+  .text {
+    margin-top: 260px;
+  }
+  .buttons{
+    margin-top: 30px;
+    height: 60px;
+  }
+  .Buttons {
+    height: 60px;
+  }
+  .span {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .headerBtn{
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+  .headerButton{
+    height: 40px;
+    font-size: 16px;
+    margin: 0 0 7px;
+  }
+  .headerButton2 {
+    height: 40px;
+    font-size: 16px;
+  }
+
+}
+
+
+@media (max-width: 475px) {
+  .text {
+    font-size: 18px;
+    left: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .text {
+    font-size: 17px;
+    margin-top: 280px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text {
+    font-size: 16px;
+    margin-top: 320px;
+  }
+}

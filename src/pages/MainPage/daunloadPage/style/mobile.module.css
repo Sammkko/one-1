@@ -1,0 +1,170 @@
+.Mobile {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.Mobile__inner {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+/*.Mobile__inner .mobile__left {*/
+/*  padding-right: 391px;*/
+/*}*/
+.mobile__left {
+  margin: 100px 0;
+}
+.mobile__title h2 {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 30px;
+  margin-right: 123px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+}
+.mobile__text p {
+  width: 500px;
+  font-family: "Inter";
+  height: 49px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+}
+.icons {
+  display: flex;
+  width: 342px;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  height: 51px;
+  width: 202px;
+  line-height: 51px;
+  background: #479f77;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.6s;
+  text-align: center;
+}
+.btn:hover {
+  background: black;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: green;
+  cursor: pointer;
+  border: none;
+  transform: translateY(-8px);
+}
+.play {
+  width: 52px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.play h5 {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.22353px;
+  line-height: 11px;
+
+  color: #000000;
+}
+.code {
+  width: 52px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.code h5 {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.00996px;
+  line-height: 11px;
+  margin-left: 3px;
+
+  color: #000000;
+}
+.code img {
+  margin-top: -3px;
+}
+.mobileIcons{
+  display: flex;
+  margin: -44px;
+  gap: 40px
+}
+
+.mobile__img img {
+  display: flex;
+  width: 263px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/phone.png) no-repeat center;
+  background-size: cover;
+}
+.mobile__text p .mobile__img img {
+  margin-right: 120px;
+}
+@media only screen and (max-width: 1300px) {
+  .Mobile__inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .mobile__img {
+    display: none;
+  }
+  .mobile__title h2 {
+    font-size: 15px;
+  }
+  .mobile__text p {
+    width: 400px;
+    font-size: 12px;
+  }
+  .mobile__icons .btn a {
+    width: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .mobile__title h2 {
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .mobile__text p {
+    width: 340px;
+    font-size: 12px;
+  }
+  .btn {
+    width: 180px;
+    margin-left: 20px;
+  }
+  .icons {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .mobileIcons{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+  }
+  .play {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+html,
+body {
+  min-height: 100%;
+  font-family: sans-serif, "Inter", "Raleway";
+  font-style: normal;
+  font-weight: 400;
+}
+
+span {
+  font-size: 14px;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}

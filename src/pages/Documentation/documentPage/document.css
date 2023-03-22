@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/arial-2');
+
+
+/* SUPPORT */
+.support {
+    margin: 140px 55px 10px;
+    font-family: 'Arial', sans-serif;
+}
+.support_search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+.support_search-path {
+    font-size: 12px;
+    color: #cccccc;
+    padding-bottom: 15px;
+}
+.support_search-path span{
+    color: #1A74B0;
+}
+.support_search input {
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+}
+.support_block {
+    display: flex;
+}
+.support_articles {
+    width: 31%;
+    padding: 0 20px 40px 0;
+}
+.support_articles h1 {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 0 10px 0;
+}
+.support_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.support_list a {
+    text-decoration: none;
+    color: #1A74B0;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+}
+.support_list-btn {
+    padding: 9px;
+    border: 1px solid #479F77;
+    color: #479F77;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: transparent;
+}
+.support_box {
+    width: 69%;
+}
+.support_inner {
+    display: flex;
+    justify-content: space-between;
+}
+.support_inner-title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #444444;
+    padding-bottom: 15px;
+}
+.support_inner-box {
+    display: flex;
+
+}
+.support_inner-box img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.support_inner-name {
+    padding: 0 0 0 16px;
+}
+.support_inner-name h3 {
+    font-size: 12px;
+    color: #1A74B0;
+    margin-bottom: 6px;
+}
+.support_inner-name p {
+    color: #757575;
+    font-weight: 400;
+    font-size: 14px;
+}
+.support_inner-btn button {
+    padding: 9px;
+    border: 1px solid #479F77;
+    color: #479F77;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+.support_content{
+    margin: 16px;
+}
+.support_content-item {
+    padding: 10px;
+}
+.support_content-item h1{
+    color: #444444;
+    font-size: 15px;
+    font-weight: 700;
+}
+.support_content-item h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+    padding-bottom: 10px;
+}
+.support_content-item h4 {
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.support_content-item h5{
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.support_content-item li {
+    color: #444444;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 0px 10px 16px;
+    list-style: none;
+}
+.support_content-text {
+    padding: 0 16px 0;
+}
+.support_content-text a {
+    color: #1A74B0;
+    text-decoration: none;
+}
+.support_content-text italic {
+    font-style: italic;
+}
+.support_content-text span {
+    font-weight: 700;
+}
+.support_content-text h6 {
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 3px;
+}
+
+
+.support_info{
+    width: 100%;
+    display: flex;
+}
+.support_info h4 {
+    margin: 0 50px 0 0;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #757575;
+}
+.support_info p {
+    font-size: 9px;
+    font-weight: 400;
+    color: #757575;
+}
+
+
+.support_comment {
+    width: 100%;
+    padding: 20px 0;
+}
+.support_comment h2 {
+    padding-bottom: 10px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #444444;
+}
+.support_comment p {
+    border-bottom: 1px dashed #B7BBC4;
+    padding: 0 0 20px 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #444444;
+}
+.support_comment div {
+    margin: 20px 0 0 0;
+    font-weight: 400;
+    font-size: 11px;
+    color: #757575;
+}
+.support_similar h2{
+    font-size: 21px;
+    font-weight: 400;
+    color: #444444;
+    padding-bottom: 10px;
+}
+.support_similar-box li {
+    margin: 0 0 15px 0;
+    list-style: none;
+}
+.support_similar-box a{
+    text-decoration: none;
+    color: #1A74B0;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+}
+
+
+
+
+
+
+@media (max-width: 850px) {
+    .support {
+        margin: 140px 20px ;
+    }
+    .support_block {
+        flex-wrap: wrap;
+    }
+    .support_articles {
+        width: 100%;
+    }
+    .support_box {
+        width: 100%;
+    }
+    .support_search-path {
+        width: 100%;
+    }
+}

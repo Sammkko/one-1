@@ -1,0 +1,408 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap');*/
+.CardioLevelСontainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.CardioLevel {
+    background-image: url('./cardioLevelImages/basic.background.svg');
+    background-size: 100%;
+}
+
+.cardioText h2 {
+    padding-top: 120px;
+    /* font-family: 'Inter'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.cardioCards {
+    width: 87%;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    margin-top: 50px;
+    justify-content: right;
+    background: url('./cardioLevelImages/img1.png') no-repeat center/cover;
+    backdrop-filter: rgba(0, 0, 0, 0.5);
+}
+
+.img2 {
+    background: url('./cardioLevelImages/img2.png') no-repeat center/cover;
+    backdrop-filter: rgba(0, 0, 0, 0.5);
+}
+
+.img3 {
+    background: url('./cardioLevelImages/img3.png') no-repeat center/cover;
+    backdrop-filter: rgba(0, 0, 0, 0.5);
+}
+
+.cardioCards::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cardioCard {
+    display: block;
+    border-left: 2px dashed black;
+    width: 33.33%;
+    height: 480px;
+    transition: 0.4s;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardioCard h3 {
+    width: 292px;
+    /* font-family: 'Inter'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #404140;
+    opacity: 0;
+}
+
+.cardioCard:first-child {
+    border: none;
+}
+
+.cardioCardTarget {
+    background: rgba(217, 217, 217, 0.6);
+    backdrop-filter: brightness(215%);
+}
+
+.cardioCardTarget h3 {
+    opacity: 1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 18px auto 0;
+    padding-bottom: 70px;
+}
+
+.btnJun {
+    width: 380px;
+    height: 68px;
+    background: #898989;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 42px;
+    transition: 0.2s linear;
+}
+
+.btnJun:hover {
+    background: #EBFFF6;
+    color: #469E76;
+}
+
+.btnMid {
+    width: 360px;
+    height: 68px;
+    background: #595959;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 42px;
+    transition: 0.2s linear;
+}
+
+.btnMid:hover {
+    background: #479F77;
+
+}
+
+.btnSen {
+    width: 380px;
+    height: 68px;
+    background: #2D2E2E;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 42px;
+    transition: 0.2s linear;
+}
+
+.btnSen:hover {
+    background: #0E653D;
+}
+
+
+@media (max-width: 1300px) {
+    .cardioCards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .btnJun {
+        width: 320px;
+    }
+
+    .btnMid {
+        width: 320px;
+    }
+
+    .btnSen {
+        width: 320px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cardioCard {
+        height: 450px;
+    }
+
+    .cardioCard h3 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .btnJun {
+        width: 300px;
+        font-size: 28px;
+    }
+
+    .btnMid {
+        width: 300px;
+        font-size: 28px;
+    }
+
+    .btnSen {
+        width: 300px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 930px) {
+    .cardioCard {
+        height: 420px;
+    }
+
+    .cardioCard h3 {
+        font-size: 22px;
+    }
+
+    .btnJun {
+        width: 280px;
+        font-size: 26px;
+    }
+
+    .btnMid {
+        width: 280px;
+        font-size: 26px;
+    }
+
+    .btnSen {
+        width: 280px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 850px) {
+    .cardioText h2 {
+        font-size: 30px;
+    }
+
+    .cardioCard {
+        height: 400px;
+    }
+
+    .cardioCard h3 {
+        font-size: 20px;
+    }
+
+    .btnJun {
+        width: 230px;
+        font-size: 24px;
+    }
+
+    .btnMid {
+        width: 230px;
+        font-size: 24px;
+    }
+
+    .btnSen {
+        width: 230px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 720px) {
+    .cardioCard h3 {
+        font-size: 18px;
+    }
+
+    .btnJun {
+        width: 200px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    .btnMid {
+        width: 200px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    .btnSen {
+        width: 200px;
+        height: 55px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 620px) {
+    .cardioCard {
+        height: 360px;
+    }
+
+    .cardioCard h3 {
+        font-size: 16px;
+    }
+
+    .btnJun {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .btnMid {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .btnSen {
+        width: 180px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .cardioText h2 {
+        font-size: 24px;
+    }
+
+    .cardioCard {
+        height: 300px;
+    }
+
+    .cardioCard h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .btnJun {
+        width: 140px;
+        font-size: 16px;
+    }
+
+    .btnMid {
+        width: 140px;
+        font-size: 16px;
+    }
+
+    .btnSen {
+        width: 140px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .cardioText h2 {
+        font-size: 22px;
+    }
+
+    .cardioCard {
+        height: 250px;
+    }
+
+    .cardioCard h3 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .btnJun {
+        width: 110px;
+        font-size: 12px;
+    }
+
+    .btnMid {
+        width: 110px;
+        font-size: 12px;
+    }
+
+    .btnSen {
+        width: 110px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .cardioText h2 {
+        font-size: 20px;
+    }
+
+    .cardioCard {
+        height: 230px;
+    }
+
+    .cardioCard h3 {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .btnJun {
+        width: 100px;
+        font-size: 11px;
+    }
+
+    .btnMid {
+        width: 100px;
+        font-size: 11px;
+    }
+
+    .btnSen {
+        width: 100px;
+        font-size: 11px;
+    }
+}

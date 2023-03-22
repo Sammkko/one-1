@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/arial-2');
+
+/* PORTFOLIO */
+.modalBg{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(217, 217, 217, 0.58);
+}
+.closeModal{
+    display: none;
+}
+.portfolio_bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.portfolio_block {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+    font-family: 'Inter', sans-serif;
+}
+.portfolio_title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+}
+.portfolio_inner {
+    position: relative;
+    width: 87%;
+    height: 665px;
+    margin: 120px auto 75px;
+    background: #1D1D1D;
+    box-shadow: inset 0 0 20px 10px rgba(255, 255, 255, 0.7);
+    border-radius: 54px 54px 54px 54px;
+    color: #fff;
+}
+.portfolio_img {
+    position: absolute;
+    top: -17%;
+    left: 44%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 -12px 35px 6px rgba(255, 255, 255, 0.25);
+}
+.portfolio_img-box {
+    position: relative;
+}
+.portfolio_img-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+.portfolio_img-photo {
+    position: absolute;
+    left: 65%;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+.portfolio_box {
+    padding: 100px 95px 65px;
+}
+.portfolio_name-box {
+    width: 100%;
+    text-align: center;
+}
+.portfolio_name {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.portfolio_pencil {
+    margin: 0 0 0 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.portfolio_pencil img {
+    width: 100%;
+    height: 100%;
+}
+.portfolio_content {
+    width: 100%;
+}
+.portfolio_item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 0 0;
+}
+.portfolio_item li {
+    list-style: none;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.portfolio_item-active {
+    text-decoration-line: underline;
+    color: #fff !important;
+}
+.portfolio_info {
+    width: 100%;
+    padding: 54px 0 0;
+    animation: fade-in .5s forwards;
+}
+.portfolio_table {
+    display: flex;
+    margin: 40px 0 25px 0;
+}
+.portfolio_info-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 25px 0 0;
+}
+.portfolio_info-block label {
+    cursor: pointer;
+}
+.portfolio_info-text {
+    font-size: 22px;
+    font-weight: 300;
+}
+.portfolio_info-checkbox {
+    margin: 0 10px 0 20px;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 3px solid #479F77;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.portfolio_info-checkbox:checked {
+    background-color: #479F77 !important;
+}
+.portfolio_btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 110px 0 0 0;
+}
+.portfolio_btn button {
+    cursor: pointer;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    padding: 10px 54px;
+}
+.portfolio_btn button:first-child {
+    background-color: #479F77;
+}
+.portfolio_btn button:last-child {
+    background-color: transparent;
+    border: 5px solid #479F77;
+}
+.pit-active {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+
+
+/* PORTFOLIO CARD */
+.p_card-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+.p_card-inner {
+    display: flex;
+}
+.p_card-info {
+    position: relative;
+    width: 40%;
+    background: #3C3C3C;
+    border-radius: 30px;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    padding: 30px;
+    margin: 40px 110px 0 0;
+}
+.p_card-img {
+    width: 19%;
+    height: 30px;
+    margin: 22px 40px 22px 0;
+}
+.p_card-info img {
+    width: 100%;
+    height: 100%;
+}
+.p_card-content {
+    width: 80%;
+}
+.p_card-number {
+    font-size: 20px;
+    font-weight: 700;
+}
+.p_card-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.p_card-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.p_card-block a {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.p_card-text {
+    margin: 10px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+/*.p_pencil img {*/
+/*    position: absolute;*/
+/*    bottom: 25%;*/
+/*    right: 10%;*/
+/*    z-index: 1;*/
+/*    margin: 0 0 0 20px;*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*    cursor: pointer;*/
+/*}*/
+.p_card-button {
+    display: flex;
+    align-items: center;
+}
+.p_card-btn {
+    margin: 40px 0 0 ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #479F77;
+    border-radius: 30px;
+    padding: 10px 54px;
+    border: none;
+    cursor: pointer;
+}
+.p_card-btn i img {
+    margin: 0 12px 0 0;
+}
+
+
+
+/* PORTFOLIO FAVORITES */
+.p_favorites_block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.p_favorites_box {
+    text-align: center;
+    width: 20%;
+    padding: 30px 20px ;
+    box-shadow: 0 0 10px 5px rgba(71, 159, 119, 0.7);
+    border-radius: 20px;
+}
+.p_favorites_box h1 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    text-decoration-line: underline;
+}
+.p_favorites_box p {
+    margin: 20px 0 0;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+.p_favorites_box button {
+    margin: 30px 0 0;
+    color: #fff;
+    background-color: #479F77;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+/* MODAL WINDOW */
+.in_confirm {
+    width: 420px;
+    height: auto;
+    background: #fff;
+    transition: 0.6s;
+    z-index: 100;
+    position: absolute;
+    top: -1000px;
+
+    left: calc(52% - 250px);
+    border-radius: 30px;
+}
+.in_confirm.in_show {
+    top: calc(25% - 140px);
+}
+.in_confirm-card {
+    width: 700px;
+    height: 560px;
+    left: calc(45% - 250px);
+}
+.in_confirm_content {
+    width: 100%;
+    height: auto;
+}
+.in_overlay {
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.in_confirm.in_show + .in_overlay {
+    display: block;
+}
+.modal_content {
+    position: relative;
+    padding: 35px 45px;
+    text-align: center;
+}
+.modal_text {
+    color: #7A7A7A;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+.modal_title {
+    color: #000;
+    font-size: 24px;
+    margin: 0 0 25px 0;
+}
+.modal_title-pd {
+    padding: 20px 0 0 0;
+}
+.modal_icon-close {
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    z-index: 100;
+    cursor: pointer;
+}
+.modal_form-name {
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal_form-margin {
+    margin-bottom: 35px;
+}
+.modal_input-name {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #7A7A7A;
+    text-align: start;
+}
+.modal_input-name span {
+    color: #4ECB86;
+}
+.modal_input {
+    margin: 10px 0 0 0 ;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #737171;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.modal_input-email {
+    margin: 10px 0 0 0 ;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #737171;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.modal_info {
+    width: 80%;
+    margin: 30px 0 10px 0;
+    color: #7A7A7A;
+    font-size: 10px;
+    font-weight: 600;
+}
+.modal_btn {
+    display: flex;
+}
+.modal_btn button {
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 34px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.modal_btn button:first-child {
+    background-color:#4ECB86;
+    color: #fff;
+}
+.modal_btn button:last-child {
+    background-color:#fff;
+    border: 4px solid #4ECB86;
+    color: #4ECB86;
+}
+.modal_btn-email button {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 34px;
+    cursor: pointer;
+    background-color: #4ECB86;
+    color: #fff;
+}
+
+.modal_btn-num {
+    margin-top: 30px;
+}
+
+/* PORTFOLIO ANIMATION */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(400px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .portfolio_img {
+        width: 130px;
+        height: 130px;
+    }
+    .portfolio_img-img {
+        height: 130px;
+    }
+    .portfolio_img-photo {
+        width: 40px;
+        height: 40px;
+    }
+    .portfolio_box {
+        padding: 75px 60px 50px;
+    }
+    .portfolio_item {
+        padding: 30px 0 0;
+    }
+    .portfolio_info {
+        padding: 30px 0 0;
+    }
+    .portfolio_btn {
+        margin: 55px 0 0;
+    }
+    .portfolio_inner {
+        height: auto;
+    }
+    .p_card-img {
+        width: 30px;
+        margin: 10px 15px 10px 0;
+    }
+    .p_card-number {
+        font-size: 18px;
+    }
+    .p_card-text {
+        font-size: 16px;
+    }
+    .portfolio_btn button {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .p_card-number {
+        font-size: 16px;
+    }
+    .p_card-text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 900px) {
+    .p_card-inner {
+        flex-wrap: wrap;
+    }
+    .p_card-info {
+        width: 70%;
+    }
+    .p_card-number {
+        font-size: 18px;
+    }
+    .p_card-text {
+        font-size: 16px;
+    }
+}
+@media (max-width: 850px) {
+    .in_confirm-card {
+        width: 500px;
+    }
+}
+@media (max-width: 800px) {
+    .portfolio_img {
+        width: 120px;
+        height: 120px;
+    }
+    .portfolio_img-img {
+        height: 120px;
+    }
+    .portfolio_img-photo {
+        width: 36px;
+        height: 36px;
+    }
+    .portfolio_name {
+        font-size: 26px;
+    }
+    .portfolio_item li {
+        font-size: 24px;
+    }
+    .portfolio_info-title {
+        font-size: 20px;
+    }
+    .portfolio_info-text {
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 720px) {
+    .portfolio_item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .portfolio_btn{
+        flex-direction: column;
+    }
+    .portfolio_btn button:last-child {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 650px) {
+    .portfolio_img {
+        width: 100px;
+        height: 100px;
+        top: -10% ;
+        left: 44%;
+    }
+    .portfolio_img-img {
+        height: 100px;
+    }
+    .portfolio_info-title {
+        margin: 0 5px 0 0;
+    }
+    .portfolio_box {
+        padding: 70px 40px 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .in_confirm-card {
+        width: 450px;
+        left: calc(35% - 150px);
+    }
+    .modal_icon-close {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .portfolio_table{
+        flex-direction: column;
+        text-align: center;
+    }
+    .portfolio_pencil {
+        margin-left: 180px;
+    }
+    .in_confirm {
+        width: 390px;
+        left: calc(35% - 100px);
+    }
+    .in_confirm-card {
+        width: 350px;
+        left: calc(35% - 100px);
+    }
+    .modal_content{
+        padding: 15px 25px;
+    }
+    .p_card-info {
+        width: 100%;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .in_confirm {
+        width: 370px;
+        left: calc(35% - 130px);
+    }
+    .portfolio_box {
+        padding:40px 30px 20px;
+    }
+    .portfolio_img {
+        top: -11% ;
+        left: 40%;
+    }
+    .p_card-number {
+        font-size: 14px;
+    }
+    .p_card-text {
+        font-size: 12px;
+    }
+    .p_card-btn {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolio_info-title {
+        font-size: 18px;
+    }
+    .portfolio_info-text {
+        font-size: 16px;
+    }
+    .portfolio_pencil {
+        width: 20px;
+        height: 20px;
+        margin-left: 130px;
+    }
+    .portfolio_info-block{
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio_info-block label {
+        margin: 10px 0;
+
+    }
+    .portfolio_img {
+        top: -10% ;
+        left: 38%;
+    }
+    .in_confirm {
+        width: 320px;
+        left: calc(35% - 130px);
+    }
+    .in_confirm-card {
+        width: 350px;
+        left: calc(35% - 130px);
+    }
+    .creditCard_title {
+        text-align: start;
+        padding-left: 10px;
+    }
+    .modal_icon-close {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .in_confirm {
+        width: 310px;
+        left: calc(35% - 110px);
+    }
+    .in_confirm-card {
+        width: 310px;
+        left: calc(35% - 110px);
+    }
+    .modal_content{
+        padding: 15px 5px;
+    }
+    .p_card-btn {
+        padding: 10px 20px;
+    }
+}
+
+
+@media (max-width: 340px) {
+    .portfolio_pencil {
+        margin-left: 100px;
+    }
+}
