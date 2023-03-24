@@ -7,6 +7,7 @@ import Context from "../content/Context"
 import svg from '../../pages/Payment/PayMent/imgs/krestik.svg'
 import { login } from '../../API'
 import { useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 export const Modal = () => {
 
@@ -75,16 +76,22 @@ export const Modal = () => {
 
     function handleLogin(username, password){
         login({
-            username,
-            password
+            username:username,
+            password:password
         })
         .then(res => {
             if(res.message){
                 setPasswordErrorInReg('Логин или пароль неверный')
             }else{
                 setPasswordErrorInReg('')
-                objRend.setUser(res)
+                localStorage.setItem('auth',JSON.stringify(res))
+                objRend.setAuth(true)
                 objRend.setModalChek(false)
+                Swal.fire(
+                    'Success',
+                    'You logined in successfully',
+                    'success'
+                  )
                 navigate('/portfolio')
             }
         })

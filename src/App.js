@@ -20,7 +20,8 @@ function App() {
     const [renderEl,setRender] = useState(false);
     const [modalCheck,setModalChek] =useState(false);
     const [modalCheck2,setModalChek2] =useState(false);
-    const [user, setUser] = useState({})
+    const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
+    const [auth, setAuth] = useState(localStorage.getItem('auth') ? true : false);
 
     function Rend(){
         if(renderEl == false){
@@ -31,7 +32,6 @@ function App() {
             <RegistrationForm/>
         }
     }
-
     const objRend = {
         'renderEl':renderEl,
         'setRender':setRender,
@@ -41,8 +41,9 @@ function App() {
         setModalChek2:setModalChek2,
         user,
         setUser,
+        auth,
+        setAuth
     }
-
     return(
         <Context.Provider value={objRend}>
             <Provider store={store}>

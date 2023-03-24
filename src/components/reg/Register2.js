@@ -16,6 +16,7 @@ import facebook from "./img/F.svg";
 import svg from '../../pages/Payment/PayMent/imgs/krestik.svg'
 import { register } from '../../API'
 import { useNavigate } from 'react-router-dom'
+import Swal from "sweetalert2";
 export const RegistrationForm = () => {
 
     const objRend = useContext(Context)
@@ -80,8 +81,14 @@ export const RegistrationForm = () => {
                 setPasswordErrorInReg('')
                 objRend.setModalChek(false)
                 objRend.setModalChek2(false)
+                localStorage.setItem('user',JSON.stringify(res))
                 objRend.setUser(res)
                 navigate('/portfolio')
+                Swal.fire(
+                    'Success',
+                    'You sign up in successfully',
+                    'success'
+                  )
             }
         })
     }

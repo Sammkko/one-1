@@ -68,7 +68,7 @@ const AboutUs = () => {
 
       <div className="aboutBlock">
         <Slider {...settings}>
-          <div class="aboutContainer">
+          <div className="aboutContainer">
             <img className="aboutItem" src={sliderPhoto1} />
           </div>
           <div className="aboutContainer">

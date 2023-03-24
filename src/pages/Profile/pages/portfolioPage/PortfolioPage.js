@@ -13,7 +13,21 @@ import Footer from "../../../../components/footer/Footer";
 import Navbar from "../../../../components/navbar/Navbar";
 import {useContext} from 'react'
 import Context from '../../../../components/content/Context'
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { CreateCard } from '../../../TrainCatalog/Trening_catalog/Catalog1';
+import Slider from "react-slick";
 
+const settings = {
+    dots: false,
+    infinite: false,
+    slidesToShow: 3.8,
+    autoplay: false,
+    speed: 1800,
+    autoplaySpeed: 0.2,
+    arrows: false,
+  };
 
 function Confirm({
                      openName, handleName, openEmail, handleEmail,
@@ -22,7 +36,8 @@ function Confirm({
                      openDelCard, handleDelCard,
                      openSuccess, handleSuccess
                  }) {
-
+const mainObj = useContext(Context)
+const navigate = useNavigate()
     return (
         <>
             <div className={
@@ -105,7 +120,13 @@ function Confirm({
                             навсегда.
                         </p>
                         <div className="modal_btn-email">
-                            <button>Удалить</button>
+                            <button onClick={()=>{
+                                handleDel(false)
+                               Swal.fire(
+                                '😂',
+                                'ahahaaha ты думал удалишь',
+                              )
+                            }}>Удалить</button>
                         </div>
                     </div>
                 </div>
@@ -123,7 +144,12 @@ function Confirm({
                         <img className="modal_icon-close" onClick={() => handleOut(false)} src={iconClose} alt=""/>
                         <p className="modal_text">Вы хотите покинуть аккаунт?</p>
                         <div className="modal_btn-email">
-                            <button>Выйти</button>
+                            <button onClick={()=>{
+                                mainObj.setAuth(false)
+                                localStorage.removeItem('auth')
+                                handleOut(false)
+                                navigate('/')
+                            }}>Выйти</button>
                         </div>
                     </div>
                 </div>
@@ -268,7 +294,8 @@ function PortfolioPage() {
     const [gender, setGender] = useState("");
 
     const context = useContext(Context)
-
+    const {favCards}= useSelector(state=>state.main)
+    
     return (
         <div className="portfolio">
             <div className="portfolio_bg">
@@ -379,14 +406,12 @@ function PortfolioPage() {
 
                                 {visible === "Избранное" &&
                                     <div className="portfolio_info">
-                                        <div className="p_favorites_block">
-                                            {/*<div className="p_favorites_box">*/}
-                                            {/*    <h1>Кардио</h1>*/}
-                                            {/*    <p>30 мин</p>*/}
-                                            {/*    <button>Начать</button>*/}
-                                            {/*</div>*/}
-
-                                        </div>
+                                         <Slider {...settings}>
+                                            {
+                                            favCards.map(item=> <CreateCard key={item.id} card={item} id={item.id} />)
+                                            }
+                                            </Slider>
+                                        
                                     </div>
                                 }
 
@@ -407,7 +432,6 @@ function PortfolioPage() {
                     </div>
                 </div>
                 <Footer/>
-
             </div>
 
         </div>

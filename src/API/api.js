@@ -11,7 +11,6 @@ export const API = {
         return await r.json()
     },
     post: async (url, body) => {
-        console.log(body);
         const r = await fetch(`${baseUrl}${url}`, {
             method: 'POST',
             body: JSON.stringify(body),

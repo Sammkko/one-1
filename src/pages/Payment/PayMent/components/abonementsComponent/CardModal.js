@@ -1,7 +1,9 @@
 import { Box, Modal } from '@mui/material'
 import React, { useState } from 'react'
+import { useContext } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Swal from 'sweetalert2'
+import Context from '../../../../../components/content/Context'
 import { closeModal, setModal2 } from '../../../../../store/slices/authSlice'
 import styl from '../../css/Abonement.module.css'
 import { ReactComponent as Bank } from '../../imgs/bank.svg'
@@ -39,7 +41,7 @@ const banks = [
     }
 ]
 function CardModal() {
-
+    const objRend = useContext(Context)
     const dispatch = useDispatch()
     const { modal1, modalPrice } = useSelector(state => state.modal)
 
@@ -48,8 +50,15 @@ function CardModal() {
         setInp(null)
     }
     const [inp, setInp] = useState()
-
     const handleChange =()=>{
+        if(!objRend.auth){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Вы не зарегристрированы',
+              })
+           return
+        }
         if(inp){
             dispatch(closeModal())
             dispatch(setModal2())
