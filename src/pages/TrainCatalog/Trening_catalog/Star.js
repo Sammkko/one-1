@@ -4,7 +4,6 @@ import { deleteCard, setCard } from '../../../store/slices/mainSlice'
 import classes from "./css/catalog.module.css"
 
 function Star({card,id}) {
-    console.log(id)
     const cards= JSON.parse(localStorage.getItem('active')) ? JSON.parse(localStorage.getItem('active')) : []
     const [act, setAct] = useState(cards.some(item=>item===id) ?  true : false)
     const dispatch = useDispatch()
