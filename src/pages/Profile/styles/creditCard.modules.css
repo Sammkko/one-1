@@ -7,23 +7,24 @@
     font-size: 24px;
     margin: 15px 0;
 }
-.creditCardForm {
-    text-align: center;
-}
 .creditCard_form {
-     margin: 25px 0;
+    margin: 25px 0;
 }
 .creditCard_form input{
+    font-size: 17px;
     width: 70%;
     border: 1px solid #878787;
     border-radius: 30px;
     padding: 10px 20px;
+
 }
 .creditCard_form small {
+    display: inline-block;
+    width: 15%;
     color: #000;
     font-weight: 400;
-    font-size: 16px;
-    margin-right: 20px;
+    font-size: 17px;
+    margin-right: 10px;
 }
 .creditCard_form-row {
     display: flex;
@@ -31,12 +32,16 @@
     margin: 25px 0;
 }
 .creditCard_row small {
+    width: 32%;
     color: #000;
     font-weight: 400;
-    font-size: 16px;
-    margin-right: 20px;
+    font-size: 17px;
+    display: inline-block;
+    margin-right: 10px;
+
 }
 .creditCard_row input{
+    font-size: 17px;
     width: 40%;
     border: 1px solid #878787;
     border-radius: 30px;
@@ -59,6 +64,15 @@
 @media (max-width: 850px) {
     .creditCard_btn button {
         font-size: 22px;
+    }
+    .creditCard_form small{
+        font-size: 14px;
+    }
+    .creditCard_row small{
+        font-size: 14px;
+    }
+    .creditCard_form input{
+        font-size: 14px;
     }
 }
 
